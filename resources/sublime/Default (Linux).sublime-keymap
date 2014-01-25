@@ -1,0 +1,12 @@
+[
+    { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
+    { "keys": ["escape", "<"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+    { "keys": ["escape", ">"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+    { "keys": ["ctrl+w"], "command": "cut" },
+    { "keys": ["alt+w"], "command": "copy" },
+    { "keys": ["ctrl+y"], "command": "paste" },
+    { "keys": ["ctrl+x", "ctrl+s"], "command": "save" },
+    { "keys": ["ctrl+x", "k"], "command": "close_file" }
+]

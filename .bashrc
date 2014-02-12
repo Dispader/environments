@@ -36,6 +36,10 @@ xterm*|rxvt*)
     ;;
 esac
 
+#  "Open your eyes: look within.  Are you satisfied with the life you're living?"  —Bob Marley
+#
+alias open="xdg-open";
+
 #  "In this world a man must either be anvil or hammer."  —Henry Wadsworth Longfellow
 #
 #  "Get me the hammer."  —Jake

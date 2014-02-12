@@ -1,32 +1,36 @@
+
 ##
 ##  Here There Be Tygers
 ##
 
 
-#  "The less effort, the faster and more powerful you will be."  —Bruce Lee
+#  Less is more.  Make less not suck.
 #
-LESS="--no-init --quit-if-one-screen --LONG-PROMPT"
-alias ls='ls --color=always'
-alias lh='ls --color=always -lasth | less -R'
-#
-#  Set up grep and ls to generate color by default (even when the output goes to pipes),
-# so that we can color-page in less (and more).
-#
-export GREP_OPTIONS='--color=always'
-export LESS=${LESS}" --RAW-CONTROL-CHARS"
+[[ "$TERM" == xterm* ]] && {
+    alias less='TERM=vt100 less'
+}
+export LESS="--long-prompt --quit-if-one-screen"
 
-#  "Hide in your shell, 'cause the world is out to bleed you for a ride."  —Roger Hodgson
+
+#  Make less more friendly for non-text input files, see lesspipe(1).
 #
-#  ${BEAT} is undefined, so we can pretend to read this.
+#  ed: Jake has no idea what this does.  At all.
+#
+[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
+
+#  Hide in your shell, 'cause the world is out to take you for a
+# ride...
+#
+#  Psst... ${BEAT} is undefined, so we can pretend* to read this.
 #
 if [ "$USER" != "root" ]; then
-    export PS1='\[\033[1;37m\](\w)\[\033[0m\]${BEAT}\[\033[4m\]$(__git_ps1 " %s ")\[\033[0m\]${BEAT}\[\033[36m\]{\h}\[\033[0m\]${BEAT}\[\033[7m\]\D{%I:%M%P}\[\033[0m\]${BEAT}] ';
+    export PS1="\[\033[1;37m\](\w)\[\033[0m\]${BEAT}\[\033[36m\]{\h}\[\033[0m\]${BEAT}\[\033[7m\]\D{%I:%M%P}\[\033[0m\]${BEAT}] ";
 fi
 if [ "$USER" == "root" ]; then
     export PS1="\[\033[1;37m\](\w)\[\033[0m\]${BEAT}\[\033[36m\]{\h}\[\033[0m\]${BEAT}\[\033[7m\]\D{%I:%M%P}\[\033[0m\]${BEAT}# ";
 fi
 
-#  A rose, by any other name, will kick your ass.
+#  Title in deed.
 #
 case "$TERM" in
 xterm*|rxvt*)
@@ -36,13 +40,25 @@ xterm*|rxvt*)
     ;;
 esac
 
-#  "Open your eyes: look within.  Are you satisfied with the life you're living?"  —Bob Marley
+#  A rose, by any other name, will kick your ass.
 #
-alias open="xdg-open";
+if [ "$TERM" != "dumb" ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+fi
 
-#  "In this world a man must either be anvil or hammer."  —Henry Wadsworth Longfellow
+
+# Enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
 #
-#  "Get me the hammer."  —Jake
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+export PATH
+
+#  Get me the hammer.
 #
 export EDITOR="emacs -nw";
 alias emacs="emacs -nw";
@@ -50,30 +66,41 @@ ev() {
   emacs "$1" --eval '(setq buffer-read-only t)'
 }
 
-#  "Americans have different ways of saying things. They say 'elevator', we say 'lift'... they say 'President', we say 'stupid psychopathic git."  —Alexei Sayle
+#  "The beauty of independence, departure, actions that rely on themselves."
 #
-if [ -f ~/.git-completion.bash ]; then
-    source ~/.git-completion.bash
-fi
-alias git-log="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short; echo"
+export JAVA_HOME=/usr/lib/jvm/java-6-sun
+#export PATH=${JAVA_HOME}/bin:${PATH}
+alias eclipse="export GDK_NATIVE_WINDOWS=true; ~/Opt/webdev/eclipse/eclipse &";
 
-#  "Said Tommy the Cat as he reeled back to clear whatever foreign matter may have nestled it's way into his mighty throat..."  —Tom Waits
+#  "It is said that the path to salvation is narrow, and as difficult to walk 
+# as a razor's edge."
 #
-alias ack="ack-grep"
+#export PATH=${PATH}:~/Bin/:~/Opt/android/android-sdk-linux_x86-1.6_r1/tools:/home/jake/Opt/ant/apache-ant-1.7.1/bin;
 
-#  "L'histoire est la version des événements passés sur laquelle les gens ont décidé de s'entendre."  —Napoléon Bonaparte
+#  CtotheVtotheS
 #
 alias cvs-webteam="export CVSROOT=:ext:@cvs.webteam.umn.edu:/opt/UMN-src; export CVS_RSH=ssh;";
 alias cvs-architecture="export CVSROOT=:ext:@cvs.webteam.umn.edu:/opt/ARCH-src; export CVS_RSH=ssh;";
+alias cvs-dispader="export CVSROOT=/var/cvs;";
 
-#  "Børk, Børk, Børk!"  —The Sweedish Chef
+#  "...ist Sehr, Sehr guuuuud."
 #
-alias chef-environment="export PATH=/opt/chef/bin:/opt/chef/embedded/bin:${PATH}"
+#export JRUBY_HOME=~/Development/JRuby/jruby-1.6.0
+#export PATH=${PATH}:${JRUBY_HOME}/bin
 
-#  "You can't be happy by making something groovy."  —Bob Dylan
+#  "Tyler sold his soap to department stores at $20 a bar."
 #
-[[ -s "/home/jake/.gvm/bin/gvm-init.sh" ]] && source "/home/jake/.gvm/bin/gvm-init.sh"
+#export SOAPUI_HOME=~/Opt/soapui/soapui-3.0.1
+#export PATH=${PATH}:${SOAPUI_HOME}/bin;
 
-#  "उत्तिष्ठ जाग्रत प्राप्य वरान्निबोधत | क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति"  —कठ उपनिषद्
+#  "Carve a tunnel of hope through the dark mountain of disappointment."  -- Martin Luther King, Jr.
 #
-#export PATH=${PATH}:~/bin
+#  "Mad Dogs and Englishmen go out in the midday sun."  --  Noël Coward
+#
+alias md00='ssh -t ale.oit.umn.edu "ssh md00.oit.umn.edu"'
+alias md01='ssh -t ale.oit.umn.edu "ssh md00.oit.umn.edu"'
+alias md02='ssh -t ale.oit.umn.edu "ssh md00.oit.umn.edu"'
+
+# Always a fan of Tommy D, myself.
+#
+#alias ack='ack-grep'

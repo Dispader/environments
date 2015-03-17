@@ -95,3 +95,8 @@ alias development-university-webapps-esup=". ~/Development/University/webapps-es
 # "εἴπατε τῷ βασιλῆι· χαμαὶ πέσε δαίδαλος αὐλά."  —the Delphic Pythia
 #
 export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib:${LD_LIBRARY_PATH}
+
+#  "Boy, you're going to carry that weight."  —The Beatles
+#
+export PACKER_HOME=~/Development/opt/packer/current
+export PATH=${HOME}/${PACKER_HOME}:${PATH}

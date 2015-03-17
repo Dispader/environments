@@ -92,6 +92,6 @@ alias development-university=". ~/Development/University/bin/environment_univers
 alias development-university-webapps=". ~/Development/University/webapps/bin/environment_university_webapps.sh"
 alias development-university-webapps-esup=". ~/Development/University/webapps-esup/bin/environment_university_webapps_esup.sh"
 
-# "Tell the emperor that my hall has fallen to the ground."  —the Delphic Pythia
+# "εἴπατε τῷ βασιλῆι· χαμαὶ πέσε δαίδαλος αὐλά."  —the Delphic Pythia
 #
 export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib:${LD_LIBRARY_PATH}

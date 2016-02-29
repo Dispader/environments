@@ -100,3 +100,7 @@ export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib:${LD_LIBRARY_PATH}
 #
 export PACKER_HOME=~/Development/opt/packer/current
 export PATH=${HOME}/${PACKER_HOME}:${PATH}
+
+#  "I have measured out my life with coffee spoons."  —T.S. Eliot                                 
+#                                                                                                 
+export JAVA_OPTS="-Djava.awt.headless=true"

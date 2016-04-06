@@ -11,8 +11,8 @@ export HISTCONTROL=ignoreboth:erasedups
 
 #  "Americans have different ways of saying things. They say 'elevator', we say 'lift'... they say 'President', we say 'stupid psychopathic git."  —Alexei Sayle
 #
-git config --global user.name "Jake Gage"
-git config --global user.email "jake.gage@gmail.com"
+git config --global user.name "Jake Gage" && git config --global user.email "jake.gage@gmail.com"
+git config --global core.pager "less -r"
 if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
     source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 fi

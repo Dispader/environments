@@ -20,6 +20,7 @@ if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
     source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 fi
 alias git-log="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short; echo"
+alias development-university="git config --global user.email 'jake@umn.edu'"
 
 #  "Hide in your shell, 'cause the world is out to bleed you for a ride."  —Roger Hodgson
 #

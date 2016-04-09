@@ -9,6 +9,10 @@
 export HISTTIMEFORMAT='%F %T '
 export HISTCONTROL=ignoreboth:erasedups
 
+#  "The problem with the world is that everyone is a few drinks behind."  —Humphrey Bogart
+#
+export HOMEBREW_GITHUB_API_TOKEN=YOUR_HOMEBREW_GITHUB_API_TOKEN
+
 #  "Americans have different ways of saying things. They say 'elevator', we say 'lift'... they say 'President', we say 'stupid psychopathic git."  —Alexei Sayle
 #
 git config --global user.name "Jake Gage" && git config --global user.email "jake.gage@gmail.com"

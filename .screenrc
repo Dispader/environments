@@ -1,4 +1,5 @@
 startup_message off
+msgwait 1
 nethack on
 hardstatus alwayslastline
 hardstatus string '%{= kc}[ %{c}%H %{c}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{c}][%{.K} %D %M %d %C:%s%a %{c}]'

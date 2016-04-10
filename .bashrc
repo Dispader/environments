@@ -51,7 +51,7 @@ ev() {
 #  "उत्तिष्ठ जाग्रत प्राप्य वरान्निबोधत | क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति"  —कठ उपनिषद्
 #
 #export PATH=${PATH}:~/Development/bin:~/Development/University/bin
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${PATH}"
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
 #  "Because your kiss in on my list of one of the best things in life."  —Hall and Oats

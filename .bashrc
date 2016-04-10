@@ -70,6 +70,7 @@ export LESS="--no-init --quit-if-one-screen --LONG-PROMPT"
 #  "I have measured out my life with coffee spoons."  —T.S. Eliot                                 
 #                                                                                                 
 #export JAVA_OPTS="-Djava.awt.headless=true"
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 #  "You can't be happy by making something groovy."  —Bob Dylan
 #

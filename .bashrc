@@ -63,6 +63,10 @@ alias ls='ls --color=always'
 export PATH=${HOME}/.rbenv/bin:${PATH}
 eval "$(rbenv init -)"
 
+#  "Some cause happiness wherever they go; others whenever they go."  —Oscar Wilde
+#
+export GOPATH=${HOME}/.go && export PATH=${PATH}:${GOPATH}/bin
+
 #  "The less effort, the faster and more powerful you will be."  —Bruce Lee
 #
 export LESS="--no-init --quit-if-one-screen --LONG-PROMPT"

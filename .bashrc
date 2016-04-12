@@ -54,6 +54,12 @@ ev() {
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${PATH}"
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
+#  "Complete abstinence is easier than perfect moderation."  —Augustine of Hippo
+#
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 #  "Because your kiss in on my list of one of the best things in life."  —Hall and Oats
 #
 alias ls='ls --color=always'

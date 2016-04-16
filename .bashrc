@@ -42,8 +42,7 @@ alias mega-prompt=PS1="\n\[\033[0;37m\]\342\224\214\342\224\200\$(if [[ \$? == 0
 #
 #  "Get me the hammer."  —Jake
 #
-export EDITOR="emacs -nw";
-alias emacs="emacs -nw";
+export EDITOR='emacs'
 ev() {
   emacs "$1" --eval '(setq buffer-read-only t)'
 }

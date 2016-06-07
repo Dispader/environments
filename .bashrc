@@ -85,3 +85,12 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 #
 export SDKMAN_DIR="/Users/jake/.sdkman"
 [[ -s "/Users/jake/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jake/.sdkman/bin/sdkman-init.sh"
+
+#  "Mister, will you please help my pone?"  —Ween
+#
+export SPLUNK_HOME=~/Development/opt/splunk
+export PATH=${PATH}:${SPLUNK_HOME}/bin
+
+#  "Børk, Børk, Børk!"  —The Sweedish Chef
+#
+alias chef-environment='eval "$(chef shell-init bash)"'

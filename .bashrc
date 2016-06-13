@@ -78,17 +78,20 @@ export GOPATH=${HOME}/.go && export PATH=${PATH}:${GOPATH}/bin
 #
 export LESS="--no-init --quit-if-one-screen --LONG-PROMPT"
 
-#  "I have measured out my life with coffee spoons."  —T.S. Eliot                                 
-#                                                                                                 
+#  "I have measured out my life with coffee spoons."  —T.S. Eliot
+#
 #export JAVA_OPTS="-Djava.awt.headless=true"
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+#  "He is armed without who is innocent within, be this thy screen, and this thy wall of brass."  Horace
+
 
 #  "You can't be happy by making something groovy."  —Bob Dylan
 #
 export SDKMAN_DIR="/Users/jake/.sdkman"
 [[ -s "/Users/jake/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jake/.sdkman/bin/sdkman-init.sh"
 
-#  "Mister, will you please help my pone?"  —Ween
+#  "Mister, will you please help my pony?"  —Ween
 #
 export SPLUNK_HOME=~/Development/opt/splunk
 export PATH=${PATH}:${SPLUNK_HOME}/bin

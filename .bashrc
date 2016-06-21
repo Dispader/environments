@@ -61,6 +61,12 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+#  "The soul becomes dyed with the color of its thoughts."  —Marcus Aurelius
+#
+#  export LS_COLORS=`ruby -rlscolors -e 'print LsColors::Colors'`
+#
+export LS_COLORS="rs=0:di=01;38;5;33:ln=38;5;45:mh=38;5;15;48;5;5:pi=38;5;11;48;5;1:so=38;5;13:do=38;5;5:bd=38;5;11;48;5;232:cd=38;5;3;48;5;232:or=38;5;45;48;5;9:mi=05;38;5;15;48;5;232:su=38;5;15;48;5;196:sg=38;5;16;48;5;11:ca=38;5;226;48;5;196:tw=38;5;16;48;5;10:ow=38;5;21;48;5;10:st=38;5;15;48;5;21:ex=01;38;5;35:*.bat=38;5;35:*.exe=38;5;35:*.pl=38;5;35:*.py=38;5;35:*.sh=38;5;35:*.swf=38;5;35:*.gem=38;5;197:*.gemspec=38;5;197:*.rb=38;5;197:*.rbw=38;5;197:*.rdoc=38;5;197:*.bmp=38;5;111:*.gif=38;5;111:*.jpeg=38;5;111:*.jpg=38;5;111:*.png=38;5;111:*.tiff=38;5;111:*.xcf=38;5;111:*.avi=38;5;171:*.flv=38;5;171:*.mkv=38;5;171:*.mov=38;5;171:*.mp4=38;5;171:*.mpeg=38;5;171:*.ogm=38;5;171:*.wmv=38;5;171:*.ape=38;5;168:*.flac=38;5;168:*.mid=38;5;168:*.midi=38;5;168:*.mp2=38;5;168:*.mp3=38;5;168:*.ogg=38;5;168:*.wav=38;5;168:*.wma=38;5;168:*.3ds=38;5;202:*.bin=38;5;202:*.dat=38;5;202:*.gb=38;5;202:*.gba=38;5;202:*.grp=38;5;202:*.iso=38;5;202:*.nds=38;5;202:*.pak=38;5;202:*.7z=38;5;215:*.bz2=38;5;215:*.gz=38;5;215:*.rar=38;5;215:*.tar=38;5;215:*.tgz=38;5;215:*.zip=38;5;215:*.djvu=38;5;247:*.doc=38;5;247:*.docx=38;5;247:*.odt=38;5;247:*.pdf=38;5;247:*.txt=38;5;247:*.bak=38;5;241:*.log=38;5;241:*.old=38;5;241:"
+
 #  "Because your kiss in on my list of one of the best things in life."  —Hall and Oats
 #
 alias ls='ls --color=always'
@@ -84,7 +90,6 @@ export LESS="--no-init --quit-if-one-screen --LONG-PROMPT"
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 #  "He is armed without who is innocent within, be this thy screen, and this thy wall of brass."  Horace
-
 
 #  "You can't be happy by making something groovy."  —Bob Dylan
 #

@@ -89,7 +89,9 @@ export LESS="--no-init --quit-if-one-screen --LONG-PROMPT"
 #export JAVA_OPTS="-Djava.awt.headless=true"
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
-#  "He is armed without who is innocent within, be this thy screen, and this thy wall of brass."  Horace
+#  "He is armed without who is innocent within, be this thy screen, and this thy wall of brass."  —Horace
+#
+title() { printf $'\ek%s\e\\' "$1"; }
 
 #  "You can't be happy by making something groovy."  —Bob Dylan
 #

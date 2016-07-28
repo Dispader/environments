@@ -14,6 +14,7 @@ export HISTFILESIZE=
 #  "The problem with the world is that everyone is a few drinks behind."  —Humphrey Bogart
 #
 export HOMEBREW_GITHUB_API_TOKEN=YOUR_HOMEBREW_GITHUB_API_TOKEN
+export HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom
 
 #  "Americans have different ways of saying things. They say 'elevator', we say 'lift'... they say 'President', we say 'stupid psychopathic git."  —Alexei Sayle
 #

@@ -16,7 +16,7 @@ export HISTFILESIZE=
 export HOMEBREW_GITHUB_API_TOKEN=YOUR_HOMEBREW_GITHUB_API_TOKEN
 export HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom
 
-#  "Americans have different ways of saying things. They say 'elevator', we say 'lift'... they say 'President', we say 'stupid psychopathic git."  —Alexei Sayle
+#  "Gotta gotta git up to git down."  —Coolio
 #
 git config --global user.name "Jake Gage" && git config --global user.email "jake.gage@gmail.com"
 git config --global core.pager "less -r"

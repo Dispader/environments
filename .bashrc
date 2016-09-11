@@ -106,4 +106,4 @@ export PATH=${PATH}:${SPLUNK_HOME}/bin
 
 #  "Børk, Børk, Børk!"  —The Sweedish Chef
 #
-alias chef-environment='eval "$(chef shell-init bash)"'
+alias chef-environment='eval "$(chef shell-init bash)" && alias git=/usr/local/bin/git'

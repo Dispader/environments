@@ -96,8 +96,8 @@ title() { printf $'\ek%s\e\\' "$1"; }
 
 #  "You can't be happy by making something groovy."  —Bob Dylan
 #
-export SDKMAN_DIR="/Users/jake/.sdkman"
-[[ -s "/Users/jake/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jake/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
 #  "One morning I shot an elephant in my pajamas. How he got into my pajamas I'll never know."  —Groucho Marx
 #

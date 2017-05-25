@@ -83,7 +83,7 @@ export GOPATH=${HOME}/.go && export PATH=${PATH}:${GOPATH}/bin
 
 #  "The less effort, the faster and more powerful you will be."  —Bruce Lee
 #
-export LESS="--no-init --quit-if-one-screen --LONG-PROMPT"
+export LESS="--no-init --quit-if-one-screen --LONG-PROMPT --RAW-CONTROL-CHARS"
 
 #  "I have measured out my life with coffee spoons."  —T.S. Eliot
 #

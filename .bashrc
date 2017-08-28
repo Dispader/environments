@@ -14,7 +14,6 @@ export HISTFILESIZE=
 #  "The problem with the world is that everyone is a few drinks behind."  —Humphrey Bogart
 #
 export HOMEBREW_GITHUB_API_TOKEN=YOUR_HOMEBREW_GITHUB_API_TOKEN
-export HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom
 
 #  "Gotta gotta git up to git down."  —Coolio
 #

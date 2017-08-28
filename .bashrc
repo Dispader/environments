@@ -100,7 +100,7 @@ export SDKMAN_DIR="~/.sdkman"
 
 #  "One morning I shot an elephant in my pajamas. How he got into my pajamas I'll never know."  —Groucho Marx
 #
-[[ -s "/Users/jake/.gradle/gradle-completion.bash" ]] && source "/Users/jake/.gradle/gradle-completion.bash"
+[[ -s "~/.gradle/gradle-completion.bash" ]] && source "~/.gradle/gradle-completion.bash"
 
 #  "Mister, will you please help my pony?"  —Ween
 #

@@ -15,7 +15,7 @@ export HISTFILESIZE=
 #
 export HOMEBREW_GITHUB_API_TOKEN=YOUR_HOMEBREW_GITHUB_API_TOKEN
 
-#  "Gotta gotta git up to git down."  —Coolio
+#  "Americans have different ways of saying things. They say 'elevator', we say 'lift'... they say 'President', we say 'stupid psychopathic git."  —Alexei Sayle
 #
 git config --global user.name "Jake Gage" && git config --global user.email "jake.gage@gmail.com"
 git config --global core.pager "less -r"

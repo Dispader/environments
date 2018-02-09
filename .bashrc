@@ -88,19 +88,17 @@ export LESS="--no-init --quit-if-one-screen --LONG-PROMPT --RAW-CONTROL-CHARS"
 #
 #export JAVA_OPTS="-Djava.awt.headless=true"
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+#export JAVA_HOME='~/.sdkman/candidates/java/current'
 
 #  "He is armed without who is innocent within, be this thy screen, and this thy wall of brass."  —Horace
 #
 title() { printf $'\ek%s\e\\' "$1"; }
 
-#  "You can't be happy by making something groovy."  —Bob Dylan
+#  "One morning I shot an elephant in my pajamas. How he got into my pajamas I'll never know.  —Groucho Marx
 #
-export SDKMAN_DIR="~/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
-
-#  "One morning I shot an elephant in my pajamas. How he got into my pajamas I'll never know."  —Groucho Marx
+# NOTE: The below isn't needed, as it's now taken care of by `brew install gradle-completion`
 #
-[[ -s "~/.gradle/gradle-completion.bash" ]] && source "~/.gradle/gradle-completion.bash"
+# [[ -s "/Users/jake/.gradle/gradle-completion.bash" ]] && source "/Users/jake/.gradle/gradle-completion.bash"
 
 #  "Mister, will you please help my pony?"  —Ween
 #

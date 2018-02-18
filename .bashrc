@@ -69,7 +69,7 @@ export LS_COLORS="rs=0:di=01;38;5;33:ln=38;5;45:mh=38;5;15;48;5;5:pi=38;5;11;48;
 
 #  "Because your kiss in on my list of one of the best things in life."  —Hall and Oats
 #
-alias ls='ls --color=always'
+alias ls='ls --color=always --indicator-style=slash'
 
 #  "Nobility, without virtue, is a fine setting without a gem."  —Jane Porter
 #

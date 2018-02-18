@@ -113,3 +113,8 @@ alias chef-environment='eval "$(chef shell-init bash)" && alias git=/usr/local/b
 #
 export STUB_INTERNET_ID="jake"
 export STUB_DISPLAY_NAME="El Jakino"
+
+#  "You can't be happy by making something groovy."  —Bob Dylan
+#
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"

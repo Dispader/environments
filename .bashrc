@@ -108,3 +108,8 @@ export PATH=${PATH}:${SPLUNK_HOME}/bin
 #  "Børk, Børk, Børk!"  —The Sweedish Chef
 #
 alias chef-environment='eval "$(chef shell-init bash)" && alias git=/usr/local/bin/git'
+
+#  "I'm going off the rails on a crazy train."  —Ozzy Ozborne
+#
+export STUB_INTERNET_ID="jake"
+export STUB_DISPLAY_NAME="El Jakino"

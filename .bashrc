@@ -98,7 +98,7 @@ title() { printf $'\ek%s\e\\' "$1"; }
 #
 # NOTE: The below isn't needed, as it's now taken care of by `brew install gradle-completion`
 #
-# [[ -s "/Users/jake/.gradle/gradle-completion.bash" ]] && source "/Users/jake/.gradle/gradle-completion.bash"
+# [[ -s "~/.gradle/gradle-completion.bash" ]] && source "~/.gradle/gradle-completion.bash"
 
 #  "Mister, will you please help my pony?"  —Ween
 #

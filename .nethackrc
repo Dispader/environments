@@ -1,0 +1,13 @@
+OPTIONS=color
+OPTIONS=hilite_pet
+OPTIONS=!use_darkgray
+OPTIONS=menucolors
+OPTIONS=pickup_burden=Unencumbered
+OPTIONS=pickup_types=!?%
+OPTIONS=paranoid_confirmation:attack pray quit die
+OPTIONS=perm_invent
+MENUCOLOR=" cursed "=red
+MENUCOLOR=" uncursed "=green
+MENUCOLOR=" blessed "=blue
+MENUCOLOR=" holy "=blue
+MENUCOLOR=" unholy "=red

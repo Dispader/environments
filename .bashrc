@@ -10,6 +10,7 @@ export HISTTIMEFORMAT='%F %T '
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=
 export HISTFILESIZE=
+shopt -s histappend
 
 #  "The problem with the world is that everyone is a few drinks behind."  —Humphrey Bogart
 #

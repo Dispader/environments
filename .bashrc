@@ -121,5 +121,4 @@ export STUB_DISPLAY_NAME="El Jakino"
 
 #  "You can't be happy by making something groovy."  —Bob Dylan
 #
-export SDKMAN_DIR="~/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
+[[ -s "/Users/jake/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jake/.sdkman/bin/sdkman-init.sh"

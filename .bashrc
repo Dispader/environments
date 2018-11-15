@@ -58,6 +58,9 @@ ev() {
 #
 #export PATH=${PATH}:~/Development/bin:~/Development/University/bin
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${PATH}"
+
+#  "If I had my choice of matter, I would rather be with cats."  —Steve Winwood
+#
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
 #  "Complete abstinence is easier than perfect moderation."  —Augustine of Hippo

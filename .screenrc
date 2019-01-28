@@ -4,3 +4,5 @@ term screen-256color                    # default: screen
 defscrollback 4096                      # default: 100
 caption always "%{= kw} %H | %{kc}%?%-w%?%{kY}%n*%f %t%?(%u)%?%{= kc}%?%+w%? %=|%{kW} %l %{kw}| %{kc}%{-b}%D, %m/%d/%Y |%{kW}%{+b}%c:%s %{wk}"
 nethack on                              # default: off
+
+shelltitle "\] |bash"
